@@ -6,7 +6,9 @@ import './App.css';
 import FeelingPage from '../FeelingPage/FeelingPage';
 import UnderstandingPage from '../UnderstandingPage/UnderstandingPage';
 import SupportPage from '../SupportPage/SupportPage';
-import CommentsPage from '../CommetsPage/CommetsPage';
+import CommentsPage from '../CommentsPage/CommentsPage';
+import ReviewPage from '../ReviewPage/ReviewPage';
+
 
 function App() {
 
@@ -39,11 +41,11 @@ function App() {
       </Route>
 
       <Route exact path = '/review'>
-      {/* <Review/> */}
+      <ReviewPage/>
       </Route>
 
       <Route exact path = '/thankyou'>
-      {/* <ThankYou/> */}
+      {/* <ThankYouPage/> */}
       </Route>
 
       </Router>
