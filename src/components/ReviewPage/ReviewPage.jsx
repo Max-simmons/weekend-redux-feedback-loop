@@ -11,7 +11,25 @@ function ReviewPage() {
     const supportScore = useSelector(state => state.supportReducer);
     const commentLeft = useSelector(state => state.commentReducer);
 
-     
+    const submitFeedback = () => {
+        
+        axios({
+            method: 'POST',
+            url: '/api/feedback',
+            data: {
+                feeling: feelingScore,
+                understanding: understandingScore,
+                support: supportScore,
+                comment: commentLeft
+            }
+        }).then((response) => {
+            console.log('POSTED');
+        }).catch((error) =>{
+            console.log('POST ERROR', error);
+        })
+
+        history.push('/thankyou');
+    }
 
     return(
         <>

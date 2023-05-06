@@ -8,7 +8,7 @@ import UnderstandingPage from '../UnderstandingPage/UnderstandingPage';
 import SupportPage from '../SupportPage/SupportPage';
 import CommentsPage from '../CommentsPage/CommentsPage';
 import ReviewPage from '../ReviewPage/ReviewPage';
-
+import ThankYouPage from '../ThankYouPage/ThankYouPage';
 
 function App() {
 
@@ -45,7 +45,7 @@ function App() {
       </Route>
 
       <Route exact path = '/thankyou'>
-      {/* <ThankYouPage/> */}
+      <ThankYouPage/>
       </Route>
 
       </Router>
