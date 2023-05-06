@@ -10,9 +10,16 @@ function FeelingPage() {
 
     const [feelingInput, setFeelingInput] = useState('');
 
-    // const newFeeling = () => {
-    //     const currentFeeling = feelingInput
-    // }
+    const newFeeling = () => {
+        const currentFeeling = feelingInput
+
+        dispatch({
+            type: 'SET_NEW_FEELING',
+            payload: currentFeeling
+        })
+        // history.push('/support')
+    }
+
 
     const handleFeelingInput = event => {
         setFeelingInput(event.target.value)
@@ -26,9 +33,10 @@ function FeelingPage() {
         placeholder="1-5"
         type="number"
         value={feelingInput}
+        onChange={handleFeelingInput}
         />
         <footer>
-            {/* <button className='nextButton' onClick={newFeeling}>Next</button> */}
+            <button className='nextButton' onClick={newFeeling}>Next</button>
         </footer>
         </>
     )
