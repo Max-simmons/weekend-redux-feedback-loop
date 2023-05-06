@@ -17,7 +17,7 @@ function FeelingPage() {
             type: 'SET_NEW_FEELING',
             payload: currentFeeling
         })
-        // history.push('/understanding')
+        history.push('/understanding')
     }
 
 
