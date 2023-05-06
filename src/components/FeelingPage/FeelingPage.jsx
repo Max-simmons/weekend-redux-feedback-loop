@@ -21,7 +21,7 @@ function FeelingPage() {
     }
 
 
-    const handleFeelingInput = event => {
+    const handleFeelingInput = (event) => {
         setFeelingInput(event.target.value)
     }
     

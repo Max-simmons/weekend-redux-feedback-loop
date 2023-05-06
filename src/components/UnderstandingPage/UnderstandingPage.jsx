@@ -4,13 +4,25 @@ import { useHistory } from 'react-router-dom';
 
 function UnderstandingPage() {
 
-    // const history = useHistory();
+    const history = useHistory();
 
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     const [understandingInput, setUnderstandingInput] = useState('')
 
+    const newUnderstanding = () => {
+        const currentUnderstanding = understandingInput
 
+        dispatch({
+            type: 'SET_NEW_UNDERSTANDING',
+            payload: currentUnderstanding
+        })
+        // history.push('/support')
+    }
+
+    const handleUnderstandingInput = (event) => {
+        setUnderstandingInput(event.target.value)
+    }
 
     return(
         <>
@@ -20,8 +32,11 @@ function UnderstandingPage() {
         placeholder='1-5'
         type='number'
         value={understandingInput}
+        onChange={handleUnderstandingInput}
         />
-
+        <footer>
+            <button className='nextButton' onClick={newUnderstanding}>Next</button>
+        </footer>
         </>
     )
 
