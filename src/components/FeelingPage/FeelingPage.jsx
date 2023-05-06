@@ -11,13 +11,19 @@ function FeelingPage() {
     const [feelingInput, setFeelingInput] = useState('');
 
     const newFeeling = () => {
+        
         const currentFeeling = feelingInput
 
-        dispatch({
-            type: 'SET_NEW_FEELING',
-            payload: currentFeeling
-        })
-        history.push('/understanding')
+        if (currentFeeling >= 6 || currentFeeling == '' || currentFeeling <= -1) {
+            alert('INVALID INPUT');
+        }
+        else {
+            dispatch({
+                type: 'SET_NEW_FEELING',
+                payload: currentFeeling
+            })
+            history.push('/understanding')   
+        }
     }
 
 

@@ -13,11 +13,16 @@ function UnderstandingPage() {
     const newUnderstanding = () => {
         const currentUnderstanding = understandingInput
 
-        dispatch({
-            type: 'SET_NEW_UNDERSTANDING',
-            payload: currentUnderstanding
-        })
-        history.push('/support')
+        if (currentUnderstanding >= 6 || currentUnderstanding == '' || currentUnderstanding <= -1) {
+            alert('INVALID INPUT');
+        }
+        else {
+            dispatch({
+                type: 'SET_NEW_UNDERSTANDING',
+                payload: currentUnderstanding
+            })
+            history.push('/support') 
+        }
     }
 
     const handleUnderstandingInput = (event) => {

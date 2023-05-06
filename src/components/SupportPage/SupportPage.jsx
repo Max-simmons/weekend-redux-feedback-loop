@@ -13,11 +13,16 @@ function SupportPage() {
     const newSupport = () => {
         const currentSupport = supportInput
 
-        dispatch({
-            type: 'SET_NEW_SUPPORT',
-            payload: currentSupport
-        })
-        history.push('/comments')
+        if (currentSupport >= 6 || currentSupport == '' || currentSupport <= -1) {
+            alert('INVALID INPUT');
+        }
+        else {
+            dispatch({
+                type: 'SET_NEW_SUPPORT',
+                payload: currentSupport
+            })
+            history.push('/comments')
+        }
     }
 
     const handleSupportInput = (event) => {
