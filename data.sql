@@ -2,7 +2,7 @@
 
 -- Switch to "prime_feedback" before making:
 -- Table to store the feedback
-CREATE TABLE "feedback" (
+CREATE TABLE "prime_feedback" (
   "id" serial primary key,
   "feeling" INT not null,
   "understanding" INT not null,
