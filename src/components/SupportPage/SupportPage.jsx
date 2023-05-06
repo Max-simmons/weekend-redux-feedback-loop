@@ -17,7 +17,7 @@ function SupportPage() {
             type: 'SET_NEW_SUPPORT',
             payload: currentSupport
         })
-        // history.push('/commets')
+        history.push('/comments')
     }
 
     const handleSupportInput = (event) => {
