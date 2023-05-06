@@ -17,7 +17,7 @@ function UnderstandingPage() {
             type: 'SET_NEW_UNDERSTANDING',
             payload: currentUnderstanding
         })
-        // history.push('/support')
+        history.push('/support')
     }
 
     const handleUnderstandingInput = (event) => {
@@ -44,4 +44,4 @@ function UnderstandingPage() {
 
 
 
-export default UnderstandingPage
+export default UnderstandingPage;

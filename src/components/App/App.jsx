@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import FeelingPage from '../FeelingPage/FeelingPage';
 import UnderstandingPage from '../UnderstandingPage/UnderstandingPage';
+import SupportPage from '../SupportPage/SupportPage';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
       </Route>
 
       <Route exact path = '/support'>
-      {/* <Support/> */}
+      <SupportPage/>
       </Route>
 
       <Route exact path = '/comments'>
