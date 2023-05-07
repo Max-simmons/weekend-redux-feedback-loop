@@ -1,4 +1,5 @@
 import { useHistory } from 'react-router-dom';
+import './ThankYouPage.css';
 
 function ThankYouPage() {
 
@@ -11,8 +12,11 @@ function ThankYouPage() {
     
     return(
         <>
+        <header>
+            <p>Feedback!</p>
+        </header>
         <h2>Thank You!</h2>
-        <button onClick={backToHome}>Leave New Feedback</button>
+        <button className='thankYouButton' onClick={backToHome}>Leave New Feedback</button>
         </>
     )
 }

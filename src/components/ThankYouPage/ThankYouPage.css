@@ -1,0 +1,19 @@
+.thankYouButton {
+    background-color: #033076;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px;
+  }
+
+h2 {
+    font-size: 49px;
+}
+
+p {
+    font-size: 30px;
+}

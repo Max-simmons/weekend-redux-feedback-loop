@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Header from '../Header/Header';
 
 function UnderstandingPage() {
 
@@ -31,6 +32,7 @@ function UnderstandingPage() {
 
     return(
         <>
+        <Header />
         <h2>How well are you understanding the content?</h2>
         <p>Understanding?</p>
         <input

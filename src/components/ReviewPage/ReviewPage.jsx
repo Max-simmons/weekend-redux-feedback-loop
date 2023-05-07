@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import './ReviewPage.css';
 
 function ReviewPage() {
 
@@ -24,13 +25,14 @@ function ReviewPage() {
             }
         }).then((response) => {
             console.log('POSTED');
+
         }).catch((error) =>{
             console.log('POST ERROR', error);
         })
 
         history.push('/thankyou');
     }
-
+        
     return(
         <>
         <h2>Review Your Feedback</h2>
@@ -38,7 +40,7 @@ function ReviewPage() {
         <p>Understanding: {understandingScore}</p>
         <p>Support: {supportScore}</p>
         <p>Comments: {commentLeft}</p>
-        <button onClick={submitFeedback}>Submit</button>
+        <button className='submitButton' onClick={submitFeedback}>Submit</button>
         </>
     )
 }

@@ -1,0 +1,13 @@
+.App-header {
+    background-color: #033076;
+    min-height: 70px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: white;
+    float: right;
+    font-size: 12px;
+  }

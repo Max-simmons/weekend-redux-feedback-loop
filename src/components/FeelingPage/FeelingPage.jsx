@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Header from '../Header/Header';
+import './FeelingPage.css';
 
 function FeelingPage() {
 
@@ -33,6 +35,7 @@ function FeelingPage() {
     
     return(
         <>
+        <Header />
         <h2>How are you feeling today?</h2>
         <p>Feeling?</p>
         <input

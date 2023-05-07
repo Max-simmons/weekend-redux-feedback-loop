@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Header from '../Header/Header';
 
 function CommentsPage() {
 
@@ -26,6 +27,7 @@ function CommentsPage() {
 
     return(
         <>
+        <Header />
         <h2>Any comments you want to leave?</h2>
         <p>Comments</p>
         <textarea

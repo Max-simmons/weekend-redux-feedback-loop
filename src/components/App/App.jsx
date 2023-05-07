@@ -9,7 +9,8 @@ import SupportPage from '../SupportPage/SupportPage';
 import CommentsPage from '../CommentsPage/CommentsPage';
 import ReviewPage from '../ReviewPage/ReviewPage';
 import ThankYouPage from '../ThankYouPage/ThankYouPage';
-import AdminPage from '../AdminPage/AdminPage';
+import AdminPage from '../AdminPage/AdminPage'
+import Header from '../Header/Header';
 
 function App() {
 
@@ -20,13 +21,14 @@ function App() {
   return (
     <Router>
     <div className='App'>
-      <header className='App-header'>
+      {/* <Header /> */}
+      {/* <header className='App-header'>
         <h1 className='App-title'>Feedback!</h1>
         <h4>Don't forget it!</h4>
       
       <p><Link to='/admin'>Admin</Link></p>
       
-      </header>
+      </header> */}
       <Route exact path = '/admin'>
       <AdminPage/>
       </Route>

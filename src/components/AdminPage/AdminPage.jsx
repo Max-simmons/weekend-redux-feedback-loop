@@ -25,9 +25,25 @@ const getFeedback = () => {
         console.log('GET ERROR:', error);
     })
 }
+
+// const deleteFeedback = () => {
+
+//     axios({
+//         method: 'DELETE',
+//         url: `/api/feedback/delete/${feedback.id}`,
+//     }).then((res) => {
+//         console.log('SUCCESSFUL DELETE FEEDBACK');
+
+//     }).catch((err) => {
+//         console.log('ERROR IN DELETE FEEDBACK', err);
+//     })
+// }
    
     return(
         <>
+        <header>
+            <h2>Feedback Results</h2>
+        </header>
         <table>
             <thead>
                 <tr>
@@ -47,7 +63,7 @@ const getFeedback = () => {
                                     <td>{feedback.understanding}</td>
                                     <td>{feedback.support}</td>
                                     <td>{feedback.comment}</td>
-                                    <td><button>Delete</button></td>
+                                    {/* <td><button onClick={deleteFeedback}>Delete</button></td> */}
                                 </tr>
                                 
                             )

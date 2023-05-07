@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Header from '../Header/Header';
 
 function SupportPage() {
 
@@ -31,6 +32,7 @@ function SupportPage() {
 
     return(
         <>
+        <Header />
         <h2>How well are you being supported?</h2>
         <p>Support</p>
         <input
